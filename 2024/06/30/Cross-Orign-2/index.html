@@ -16,24 +16,26 @@
   <meta name="author" content="Xiaohan Ding">
   <meta name="keywords" content="Full Stack Developer, React, Node.js, SEO Optimization, API Development, Front-end, Back-end, Web Development, Page Optimization, Xiaohan Ding">
   
-    <meta name="description" content="Xiaohan Ding is an experienced full stack developer specializing in React and Node.js. Skilled in API development, page optimization, SEO, and creating high-quality web applications. Sharing insights">
+    <meta name="description" content="CORS(Cross-Origin Resource Sharing)Many people might confuse CORS (Cross-Origin Resource Sharing) as a security protocol, but it’s not. CORS is a system composed of a series of HTTP headers that deter">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Gitlab On Docker">
-<meta property="og:url" content="https://han1015.github.io/dukeding.github.io/2024/12/16/Gitlab-On-Docker/index.html">
+<meta property="og:title" content="Cross Orign 2">
+<meta property="og:url" content="https://han1015.github.io/dukeding.github.io/2024/06/30/Cross-Orign-2/index.html">
 <meta property="og:site_name" content="Xiaohan Ding - Full Stack Developer">
-<meta property="og:description" content="Xiaohan Ding is an experienced full stack developer specializing in React and Node.js. Skilled in API development, page optimization, SEO, and creating high-quality web applications. Sharing insights">
+<meta property="og:description" content="CORS(Cross-Origin Resource Sharing)Many people might confuse CORS (Cross-Origin Resource Sharing) as a security protocol, but it’s not. CORS is a system composed of a series of HTTP headers that deter">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-12-16T03:34:24.000Z">
-<meta property="article:modified_time" content="2024-12-16T03:34:24.072Z">
+<meta property="og:image" content="https://han1015.github.io/dukeding.github.io/img/Images-Cross-Orign-2/options.png">
+<meta property="article:published_time" content="2024-06-30T00:06:24.000Z">
+<meta property="article:modified_time" content="2025-01-17T22:57:27.716Z">
 <meta property="article:author" content="Xiaohan Ding">
 <meta property="article:tag" content="Full Stack Developer, React, Node.js, SEO Optimization, API Development, Front-end, Back-end, Web Development, Page Optimization, Xiaohan Ding">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://han1015.github.io/dukeding.github.io/img/Images-Cross-Orign-2/options.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Gitlab On Docker - Xiaohan Ding - Full Stack Developer</title>
+  <title>Cross Orign 2 - Xiaohan Ding - Full Stack Developer</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -227,7 +229,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Gitlab On Docker"></span>
+            <span id="subtitle" data-typed-text="Cross Orign 2"></span>
           
         </div>
 
@@ -238,8 +240,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-12-16 14:34" pubdate>
-          December 16, 2024 pm
+        <time datetime="2024-06-30 10:06" pubdate>
+          June 30, 2024 am
         </time>
       </span>
     
@@ -250,7 +252,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 words
+          469 words
         
       </span>
     
@@ -261,7 +263,7 @@
         
         
         
-          1 mins
+          8 mins
         
       </span>
     
@@ -306,12 +308,89 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Gitlab On Docker</h1>
+            <h1 id="seo-header">Cross Orign 2</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <h2 id="CORS-Cross-Origin-Resource-Sharing"><a href="#CORS-Cross-Origin-Resource-Sharing" class="headerlink" title="CORS(Cross-Origin Resource Sharing)"></a>CORS(Cross-Origin Resource Sharing)</h2><p>Many people might confuse CORS (Cross-Origin Resource Sharing) as a security protocol, but it’s not. CORS is a system composed of a series of HTTP headers that determine whether the <strong>client browser</strong> should <strong>block</strong> frontend JavaScript code from accessing <strong>responses</strong>to cross-origin requests. CORS can be explained as a mechanism that provides a secure way for the Same-Origin Policy (SOP) to allow cross-origin requests under specific conditions defined by the server.</p>
+<h3 id="Request-Headers"><a href="#Request-Headers" class="headerlink" title="Request Headers"></a><strong>Request Headers</strong></h3><ul>
+<li><strong><code>Origin</code></strong>: Indicates the origin (protocol, host, and port) of the request.</li>
+</ul>
+<h3 id="Response-Headers"><a href="#Response-Headers" class="headerlink" title="Response Headers"></a><strong>Response Headers</strong></h3><ul>
+<li><strong><code>Access-Control-Allow-Origin</code></strong>: Specifies which origin(s) are allowed (e.g., <code>*</code>, specific domain).</li>
+<li><strong><code>Access-Control-Allow-Methods</code></strong>: Lists permitted HTTP methods (e.g., <code>GET</code>, <code>POST</code>).</li>
+<li><strong><code>Access-Control-Allow-Headers</code></strong>: Specifies allowed custom request headers.</li>
+<li><strong><code>Access-Control-Expose-Headers</code></strong>: Lists response headers accessible to the client.</li>
+<li><strong><code>Access-Control-Allow-Credentials</code></strong>: Indicates if credentials (cookies, HTTP auth) are allowed (<code>true</code> or <code>false</code>).</li>
+<li><strong><code>Access-Control-Max-Age</code></strong>: Specifies how long preflight response can be cached (in seconds).</li>
+</ul>
+<h2 id="Preflight-Requests"><a href="#Preflight-Requests" class="headerlink" title="Preflight Requests"></a><strong>Preflight Requests</strong></h2><p>For complex requests, the browser sends an <strong>OPTIONS</strong> request with the following headers:</p>
+<ul>
+<li><strong><code>Access-Control-Request-Method</code></strong>: The intended HTTP method.</li>
+<li><strong><code>Access-Control-Request-Headers</code></strong>: Custom headers the client wants to send.</li>
+</ul>
+<h2 id="The-process-of-cross-domain-requests"><a href="#The-process-of-cross-domain-requests" class="headerlink" title="The process of cross domain requests"></a>The process of cross domain requests</h2><h3 id="Simple-Requests"><a href="#Simple-Requests" class="headerlink" title="Simple Requests"></a>Simple Requests</h3><p>A request is considered <strong>simple</strong> if it meets all the following conditions:</p>
+<ol>
+<li><p><strong>HTTP Methods</strong>: The request uses one of the following methods:</p>
+<ul>
+<li><code>GET</code></li>
+<li><code>HEAD</code></li>
+<li><code>POST</code></li>
+</ul>
+</li>
+<li><p><strong>Headers</strong>: The request contains only headers that are automatically set by the browser, such as:</p>
+<ul>
+<li><code>Accept</code></li>
+<li><code>Accept-Language</code></li>
+<li><code>Content-Language</code></li>
+<li><code>Content-Type</code> (with values <code>application/x-www-form-urlencoded</code>, <code>multipart/form-data</code>, or <code>text/plain</code>)</li>
+</ul>
+</li>
+<li><p><strong>No Custom Headers</strong>: The request does not include any custom headers.</p>
+</li>
+</ol>
+<p><strong>Behavior</strong>: If your request is defined as a simple request by the browser, you will not send a <strong>preflight request</strong> for this request, so the request will be successfully sent and arrive at the server. The service will make its own judgment and respond. If the response header does not contain <strong>Access Control Allow Origin</strong> or the attribute value does not contain the current domain name, it will be blocked from obtaining the response content.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);<br><span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>();<br><br>app.<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/info&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> &#123;<br>  res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">&#x27;access-control-allow-origin&#x27;</span>, req.<span class="hljs-property">headers</span>.<span class="hljs-property">origin</span> || <span class="hljs-string">&#x27;*&#x27;</span>);<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;get info API&#x27;</span>);<br>  res.<span class="hljs-title function_">json</span>(&#123;<span class="hljs-string">&#x27;status&#x27;</span>: <span class="hljs-string">&quot;success&quot;</span>&#125;);<br>&#125;);<br></code></pre></td></tr></table></figure>
+
+
+<h3 id="Non-Simple-Requests"><a href="#Non-Simple-Requests" class="headerlink" title="Non-Simple Requests"></a>Non-Simple Requests</h3><p>Requests that do not meet the criteria for simple requests are classified as <strong>non-simple</strong>. This includes requests that:</p>
+<ul>
+<li>Use HTTP methods other than <code>GET</code>, <code>HEAD</code>, or <code>POST</code>.</li>
+<li>Include custom headers not automatically set by the browser.</li>
+<li>Use a <code>Content-Type</code> other than <code>application/x-www-form-urlencoded</code>, <code>multipart/form-data</code>, or <code>text/plain</code>.</li>
+</ul>
+<p><strong>Behavior</strong>: For non-simple requests, the browser performs a <strong>preflight</strong> request using the <code>OPTIONS</code> method to determine if the actual request is safe to send. The <code>OPTIONS</code>method will include the <strong><code>Access-Control-Request-Method</code></strong> in the request header to inform the server of the actual request method, and the <strong><code>Access-Control-Request-Headers</code></strong> to inform the server of the custom header fields included in the actual request. The server will then decide whether the actual request is allowed.</p>
+<p>FrontEnd</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;http://localhost:8080/info&#x27;</span>, &#123;<br>  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;post&#x27;</span>,<br>  <span class="hljs-attr">headers</span>: &#123;<br>    <span class="hljs-attr">testtest</span>: <span class="hljs-string">&#x27;testtest&#x27;</span>,<br>  &#125;,<br>&#125;);<br></code></pre></td></tr></table></figure>
+<p>Backend</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// server</span><br><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);<br><span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>();<br><br>app.<span class="hljs-title function_">options</span>(<span class="hljs-string">&#x27;/info&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> &#123;<br>  res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">&#x27;access-control-allow-origin&#x27;</span>, req.<span class="hljs-property">headers</span>.<span class="hljs-property">origin</span> || <span class="hljs-string">&#x27;*&#x27;</span>);<br>  res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">&#x27;access-control-allow-method&#x27;</span>, req.<span class="hljs-property">headers</span>[<span class="hljs-string">&#x27;access-control-request-method&#x27;</span>] || <span class="hljs-string">&#x27;GET,HEAD,PUT,PATCH,POST,DELETE&#x27;</span>)<br>  res.<span class="hljs-title function_">setHeader</span>(<br>    <span class="hljs-string">&#x27;access-control-allow-headers&#x27;</span>,<br>    req.<span class="hljs-property">headers</span>[<span class="hljs-string">&#x27;access-control-request-headers&#x27;</span>] || <span class="hljs-string">&#x27;&#x27;</span><br>  );<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;options&#x27;</span>);<br>  res.<span class="hljs-title function_">sendStatus</span>(<span class="hljs-number">204</span>);<br>&#125;);<br><br>app.<span class="hljs-title function_">post</span>(<span class="hljs-string">&#x27;/info&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> &#123;<br>  res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">&#x27;access-control-allow-origin&#x27;</span>, req.<span class="hljs-property">headers</span>.<span class="hljs-property">origin</span> || <span class="hljs-string">&#x27;*&#x27;</span>);<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;post info&#x27;</span>);<br>  res.<span class="hljs-title function_">json</span>(&#123;<span class="hljs-string">&#x27;status&#x27;</span>: <span class="hljs-string">&quot;success&quot;</span>&#125;);<br>&#125;);<br></code></pre></td></tr></table></figure>
+<p><img src="/dukeding.github.io/img/Images-Cross-Orign-2/options.png" srcset="/dukeding.github.io/img/loading.gif" lazyload alt="Alt Text"></p>
+<p>From the example, we can see that <strong>preflight Response</strong> needs to contain the correct <code>access-control-allow-origin</code>(<strong>Required</strong>), <code>access-control-allow-headers</code>(<strong>Required</strong>), <code>access-control-allow-methods</code>(<strong>Not Required</strong>), the actual request can be sent. And the real response needs to contain the correct <code>access-control-allow-origin</code>, the response can be received. If the <strong>preflight Response</strong> does not contain the <code>access-control-allow-origin</code>, the real request cannot be sent. If the <code>access-control-allow-origin</code>  is missing in the response to an actual CORS request, the browser will <strong>block</strong> the response, and the requesting web application will not be able to access the content.</p>
+<p>综上可知，跨域请求中如果是简单请求则拦截响应(没有包含正确的access-control-allow-origin)，非简单请求则是有可能<strong>拦截请求</strong>或者<strong>拦截响应</strong>。</p>
+<h2 id="Set-Preflight-Request-Cache"><a href="#Set-Preflight-Request-Cache" class="headerlink" title="Set Preflight Request Cache"></a>Set Preflight Request Cache</h2><p>We can set the <code>Access-Control-Max-Age</code> header to reduce the frequency of preflight (OPTIONS) requests.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js">res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">&#x27;access-control-max-age&#x27;</span>, <span class="hljs-number">60</span>);<br></code></pre></td></tr></table></figure>
+
+<h2 id="Cross-Origin-Requests-with-Credentials"><a href="#Cross-Origin-Requests-with-Credentials" class="headerlink" title="Cross-Origin Requests with Credentials"></a>Cross-Origin Requests with Credentials</h2><p>When making cross-origin requests with credentials (e.g., cookies or HTTP authentication), follow these rules:</p>
+<h3 id="Key-Points"><a href="#Key-Points" class="headerlink" title="Key Points"></a>Key Points</h3><ol>
+<li><p><strong>Request Configuration (Client-Side)</strong>:</p>
+<ul>
+<li>Use <code>credentials: &quot;include&quot;</code> to include credentials in the fetch request.</li>
+</ul>
+</li>
+<li><p><strong>Response Configuration (Server-Side)</strong>:</p>
+<ul>
+<li>Include the following headers in both <strong>preflight (OPTIONS)</strong> and <strong>actual request</strong> responses:<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ada"><span class="hljs-keyword">Access</span>-Control-Allow-Credentials: <span class="hljs-literal">true</span><br><span class="hljs-keyword">Access</span>-Control-Allow-Origin: http://example.com<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>Access-Control-Allow-Origin Restriction</strong>:</p>
+<ul>
+<li>When <code>Access-Control-Allow-Credentials</code> is set to <code>true</code>, <code>Access-Control-Allow-Origin</code> <strong>cannot</strong> be <code>*</code>. It must specify the exact domain allowed.</li>
+</ul>
+</li>
+</ol>
+<p>This ensures secure cross-origin communication with credentials.</p>
+
                 
               </div>
             
@@ -328,8 +407,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Gitlab On Docker</div>
-      <div>https://han1015.github.io/dukeding.github.io/2024/12/16/Gitlab-On-Docker/</div>
+      <div>Cross Orign 2</div>
+      <div>https://han1015.github.io/dukeding.github.io/2024/06/30/Cross-Orign-2/</div>
     </div>
     <div class="license-meta">
       
@@ -341,7 +420,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>December 16, 2024</div>
+          <div>June 30, 2024</div>
         </div>
       
       
@@ -373,12 +452,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/dukeding.github.io/2024/12/16/Gitlab-On-Docker/" title="Gitlab On Docker">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Gitlab On Docker</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/dukeding.github.io/2024/06/30/Cross-Orign-2/" title="Cross Orign 2">
-                        <span class="hidden-mobile">Cross Orign 2</span>
+                      <a href="/dukeding.github.io/2024/06/24/Cross-Orign-1/" title="Cross Orign 1">
+                        <span class="hidden-mobile">Cross Orign 1</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
